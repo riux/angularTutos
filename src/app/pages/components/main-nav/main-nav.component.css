@@ -1,3 +1,7 @@
 .sidenav-container {
   height: 100%;
 }
+
+.side {
+  width: 200px;
+}
