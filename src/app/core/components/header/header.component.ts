@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-main-nav',
-  templateUrl: './main-nav.component.html',
-  styleUrls: ['./main-nav.component.css']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class MainNavComponent {
+export class HeaderComponent {
 
   private mediaQuery: MediaQueryList = matchMedia('(max-width:720px)');
   constructor() { }
@@ -13,6 +13,4 @@ export class MainNavComponent {
   showBtn() {
     return this.mediaQuery.matches;
   }
-
-
 }

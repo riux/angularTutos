@@ -5,15 +5,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // components imports
 import { AppComponent } from './app.component';
-import { PagesModule } from './pages/pages.module';
 
 // Route
 import { AppRoutingModule } from './app-routing.module';
+import { CoreModule } from './core/core.module';
 
-
-
-// material imports
-import { MaterialModule } from './material.module';
 
 
 @NgModule({
@@ -23,9 +19,8 @@ import { MaterialModule } from './material.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    PagesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

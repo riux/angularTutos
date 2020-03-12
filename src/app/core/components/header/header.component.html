@@ -4,8 +4,10 @@
       MENÚ
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['/home']"> Home </a>
-      <a mat-list-item [routerLink]="['/nosotros']"> Nosotros </a>
+      <a mat-list-item [routerLink]="['/']"> Inicio </a>
+      <a mat-list-item [routerLink]="['/about']"> Nosotros </a>
+      <a mat-list-item [routerLink]="['/contact']"> Contact </a>
+      <a mat-list-item [routerLink]="['/intranet']"> Intranet </a>
     </mat-nav-list>
   </mat-sidenav>
   <div class="app-sidenav-content">
@@ -16,5 +18,5 @@
       <span>Titulo de la app..</span>
     </mat-toolbar>
   </div>
-  <router-outlet></router-outlet>
+  <ng-content></ng-content>
 </mat-sidenav-container>
