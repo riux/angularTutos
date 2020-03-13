@@ -7,6 +7,7 @@ import { NotFound404Component } from './components/not-found404/not-found404.com
 import { ProjectLayoutComponent } from './layouts/project-layout/project-layout.component';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material.module';
+import { MenuListComponent } from './components/menu-list/menu-list.component';
 
 
 
@@ -15,7 +16,8 @@ import { MaterialModule } from '../material.module';
     HeaderComponent,
     FooterComponent,
     NotFound404Component,
-    ProjectLayoutComponent
+    ProjectLayoutComponent,
+    MenuListComponent,
   ],
   imports: [
     CommonModule,
