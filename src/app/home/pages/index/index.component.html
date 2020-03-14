@@ -1,2 +1,8 @@
-<p>Home index works!</p>
-<app-btns></app-btns>
+<!-- <p>Home index works!</p>
+<app-btns></app-btns> -->
+<app-cuadro [datos]="nombres" (emitEvento)="test($event)">
+  desde el index
+</app-cuadro>
+<p [appResaltar]="color" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perferendis earum numquam culpa, rerum dolores nam odio, rem veritatis iure facere laborum harum, quidem blanditiis? Asperiores dolores sequi perferendis omnis!</p>
+<br>
+<app-animate></app-animate>

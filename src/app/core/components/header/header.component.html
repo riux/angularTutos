@@ -4,10 +4,11 @@
       MENÚ
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['/']"> Inicio </a>
+      <!-- <a mat-list-item [routerLink]="['/']"> Inicio </a>
       <a mat-list-item [routerLink]="['/about']"> Nosotros </a>
       <a mat-list-item [routerLink]="['/contact']"> Contact </a>
-      <a mat-list-item [routerLink]="['/intranet']"> Intranet </a>
+      <a mat-list-item [routerLink]="['/intranet']"> Intranet </a> -->
+      <app-menu-list-item *ngFor="let item of navItems" [item]="item"></app-menu-list-item>
     </mat-nav-list>
   </mat-sidenav>
   <div class="app-sidenav-content">

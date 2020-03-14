@@ -7,12 +7,12 @@ import { Router, NavigationEnd, Event } from '@angular/router';
 })
 export class NavService {
   public sideNav: any;
-  public url = new  BehaviorSubject<string>(undefined);
+  public currentUrl = new  BehaviorSubject<string>(undefined);
 
   constructor( private router: Router ) {
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
-        this.url.next(event.urlAfterRedirects);
+        this.currentUrl.next(event.urlAfterRedirects);
       }
     });
   }

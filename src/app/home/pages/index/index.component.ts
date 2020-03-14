@@ -8,6 +8,11 @@ import { throttleTime, filter, map, pluck, switchMap } from 'rxjs/operators';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
+  color = 'yellow';
+  nombres = [
+    { nombre: 'Richard', edad: 21},
+    { nombre: 'Jhon', edad: 24},
+  ];
 
   constructor() { }
 
@@ -27,6 +32,10 @@ export class IndexComponent implements OnInit {
     // this.testFilterOperator();
     // this.testPluckOp();
 
+  }
+
+  test(dato): void {
+    console.log('Desde el padre: ', dato);
   }
 
   crearObs() {
